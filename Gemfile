@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 
-gem 'taskrabbit', '~> 0.0.1'
+gem 'taskrabbit', '~> 0.0.5'
+gem 'omniauth-taskrabbit', '~> 0.0.1'
 
 gem 'newrelic_rpm'
 gem 'airbrake'
@@ -10,6 +11,7 @@ gem 'heroku'
 
 group :development do
   gem 'debugger'
+  gem 'foreman'
 end
 
 group :development, :test do

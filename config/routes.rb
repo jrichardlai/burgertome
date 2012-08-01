@@ -2,7 +2,7 @@ BurgerToMe::Application.routes.draw do
 
   root :to => 'orders#new'
 
-  match 'callback' => 'users#login' # callback from Taskrabbit OAuth
+  match '/auth/:provider/callback', to: 'users#login'
   match 'logout'   => 'users#logout'
 
   resources :orders
